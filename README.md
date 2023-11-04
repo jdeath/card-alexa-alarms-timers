@@ -1,3 +1,8 @@
+# Update
+Please use new repo at: https://github.com/Kethlak/card-alexa-alarms-timers
+
+That repo is run by the orrignal author of the lovelace card and will be updated
+
 # card-alexa-alarms-timers
 Card for Alexa Timers and Alarms
 
