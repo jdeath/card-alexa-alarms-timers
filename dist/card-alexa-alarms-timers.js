@@ -694,7 +694,8 @@ class AlexaAlarm {
         if (this.name == null) {
             this.name = getNameFromTime(date_time, showSeconds);
         }
-        this.device = device.substring(0, device.indexOf("next"));
+        this.device = device.substring(0, device.indexOf("Next"));
+		this.device_full = device;
         this.alarmTime = date_time;
         this.remainingTime = Date.parse(date_time) - Date.now();
         this.seconds = Math.floor(this.remainingTime / 1000);
@@ -711,7 +712,7 @@ class AlexaTimer {
     constructor(id, label, device, remainingTime, triggerTime, originalDurationInMillis) {
         this.id = id;
         this.label = label;
-        this.device = device.substring(0, device.indexOf("next"));
+        this.device = device.substring(0, device.indexOf("Next"));
         this.triggerTime = triggerTime;
         if(triggerTime == null) {
             this.remainingTime = remainingTime;
